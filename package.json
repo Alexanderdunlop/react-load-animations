@@ -1,0 +1,20 @@
+{
+  "name": "react-load-animations",
+  "version": "1.0.0",
+  "description": "React loading animations using css",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexanderdunlop/react-load-animations.git"
+  },
+  "keywords": ["react", "css", "spinners"],
+  "author": "Alexanderdunlop <alex.dunlop@orbba.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alexanderdunlop/react-load-animations/issues"
+  },
+  "homepage": "https://github.com/Alexanderdunlop/react-load-animations#readme"
+}
