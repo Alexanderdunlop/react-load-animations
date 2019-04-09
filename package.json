@@ -4,17 +4,34 @@
   "description": "React loading animations using css",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint '**/*.js'",
+    "lint:fix": "prettier-eslint '**/*.js' --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alexanderdunlop/react-load-animations.git"
   },
-  "keywords": ["react", "css", "spinners"],
+  "keywords": [
+    "react",
+    "css",
+    "load",
+    "animations",
+    "spinners"
+  ],
   "author": "Alexanderdunlop <alex.dunlop@orbba.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Alexanderdunlop/react-load-animations/issues"
   },
-  "homepage": "https://github.com/Alexanderdunlop/react-load-animations#readme"
+  "homepage": "https://github.com/Alexanderdunlop/react-load-animations#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1"
+  }
 }
