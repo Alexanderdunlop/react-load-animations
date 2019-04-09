@@ -2,7 +2,9 @@
   "name": "react-load-animations",
   "version": "1.0.0",
   "description": "React loading animations using css",
-  "main": "index.js",
+  "main": "dist/bundle.cjs.js",
+  "module": "dist/bundle.esm.js",
+  "sideEffects": false,
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -56,6 +58,13 @@
     "rollup": "^1.9.0",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-node-resolve": "^4.2.1",
+    "rollup-plugin-string": "^3.0.0",
     "rollup-plugin-terser": "^4.0.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.2"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }
