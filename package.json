@@ -5,6 +5,9 @@
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "rollup -c",
@@ -18,7 +21,8 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook",
     "predeploy": "yarn storybook:build",
-    "deploy": "gh-pages -d storybook-static"
+    "deploy": "gh-pages -d storybook-static",
+    "prepublishOnly": "yarn build"
   },
   "husky": {
     "hooks": {
@@ -43,7 +47,7 @@
     "animations",
     "spinners"
   ],
-  "author": "Alexanderdunlop <alex.dunlop@orbba.com>",
+  "author": "Alexanderdunlop <alexjamesdunlop@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Alexanderdunlop/react-load-animations/issues"
