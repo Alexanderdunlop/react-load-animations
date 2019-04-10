@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
       <meta charset="UTF-8">
       <title>CJS Example</title>
     </head>
-    <body style="background-color:black;">
+    <body>
       ${html}
     </body>
     </html>
