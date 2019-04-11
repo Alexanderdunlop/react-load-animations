@@ -49,8 +49,8 @@ class App extends Component {
 
 ## Props
 All components come with the following props
-- Width  : Sets the width of the loader (Defaults to 64px)
-- Height : Sets the height of the laoder (Defaults to 64px)
+- Width(Int): Set load animation width (Default 64)
+- Height(Int): Sets load animation height (Default 64)
 
 ## Examples
 
