@@ -1,3 +1,5 @@
+export * from './Comet'
+
 export * from './Ellipsis'
 
 export * from './Ring'

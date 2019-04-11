@@ -1,0 +1,37 @@
+.rla-comet {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.rla-comet div {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #afafaf;
+  border-radius: 50%;
+  animation: rla-comet 1s cubic-bezier(0.3, 0.5, 0.8, 0.7) infinite;
+}
+.rla-comet div:nth-child(2) {
+  animation-delay: -0.1s;
+  background: #999999;
+}
+.rla-comet div:nth-child(3) {
+  animation-delay: -0.15s;
+  background: #828282;
+}
+@keyframes rla-comet {
+  0% {
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 52px;
+    left: 52px;
+    opacity: 0;
+  }
+}

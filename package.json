@@ -18,7 +18,8 @@
     "test:coverage": "jest --coverage",
     "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "test:staged": "jest --findRelatedTests",
-    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybook": "start-storybook -c .storybook",
+    "prestorybook:build": "rm -rf storybook-static",
     "storybook:build": "build-storybook -c .storybook",
     "predeploy": "yarn storybook:build",
     "deploy": "gh-pages -d storybook-static",
@@ -44,6 +45,8 @@
     "react",
     "css",
     "load",
+    "loading",
+    "animation",
     "animations",
     "spinners"
   ],
