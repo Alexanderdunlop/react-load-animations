@@ -29,8 +29,28 @@ yarn add react-load-animations
 ## Usage
 
 ```js
-import { Ellipsis } from 'react-load-animations'
+import React, { Component } from 'react'
+import { Comet, Ellipsis, Ring, Ripple } from 'react-load-animations';
+
+class App extends Component {
+  render() {
+    return (
+      // Default size is 64px by 64px
+      <Comet />
+
+      // With props
+      <Ellipsis width={100} />
+      <Ring height={100} />
+      <Ripple width={100} height={100} />
+    )
+  }
+}
 ```
+
+## Props
+All components come with the following props
+- Width  : Sets the width of the loader (Defaults to 64px)
+- Height : Sets the height of the laoder (Defaults to 64px)
 
 ## Examples
 
@@ -40,4 +60,4 @@ import { Ellipsis } from 'react-load-animations'
 
 ## Copyright
 
-Ellipsis, Ring, Ripple from [loading.io](https://loading.io)
+Ellipsis, Ring, Ripple modified from [loading.io](https://loading.io)

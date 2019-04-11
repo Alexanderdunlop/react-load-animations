@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from './styles.css'
 
-const Ellipsis = props => (
+const Ellipsis = ({ width, height }) => (
   <>
     <style>{styles.toString()}</style>
-    <div className="lds-ellipsis">
+    <div className="lds-ellipsis" style={{ width, height }}>
       <div />
       <div />
       <div />
@@ -12,5 +12,10 @@ const Ellipsis = props => (
     </div>
   </>
 )
+
+Ellipsis.propTypes = {
+  width: Number,
+  height: Number
+}
 
 export default Ellipsis

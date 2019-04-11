@@ -8,9 +8,9 @@
   box-sizing: border-box;
   display: block;
   position: absolute;
-  width: 51px;
-  height: 51px;
-  margin: 6px;
+  width: calc(100% - 20%);
+  height: calc(100% - 20%);
+  margin: calc(10%);
   border: 6px solid #828282;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;

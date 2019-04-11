@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`does not render with invalid props 1`] = `
+Array [
+  <style>
+    [object Object]
+  </style>,
+  <div
+    className="lds-ellipsis"
+    style={
+      Object {
+        "height": "500",
+        "width": "500",
+      }
+    }
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>,
+]
+`;
+
 exports[`renders correctly 1`] = `
 Array [
   <style>
@@ -7,6 +29,34 @@ Array [
   </style>,
   <div
     className="lds-ellipsis"
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>,
+]
+`;
+
+exports[`renders correctly with both props 1`] = `
+Array [
+  <style>
+    [object Object]
+  </style>,
+  <div
+    className="lds-ellipsis"
+    style={
+      Object {
+        "height": 500,
+        "width": 500,
+      }
+    }
   >
     <div />
     <div />

@@ -6,8 +6,8 @@
 }
 .rla-comet div {
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 18.75%;
+  height: 18.75%;
   background: #afafaf;
   border-radius: 50%;
   animation: rla-comet 1s cubic-bezier(0.3, 0.5, 0.8, 0.7) infinite;
@@ -30,8 +30,8 @@
     opacity: 1;
   }
   100% {
-    top: 52px;
-    left: 52px;
+    top: 81.25%;
+    left: 81.25%;
     opacity: 0;
   }
 }
