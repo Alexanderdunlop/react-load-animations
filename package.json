@@ -1,6 +1,6 @@
 {
   "name": "react-load-animations",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React loading animations using css",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
