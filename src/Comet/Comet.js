@@ -1,18 +1,22 @@
 import React from 'react'
 import styles from './styles.css'
 
-const Comet = ({ width, height }) => (
-  <>
-    <style>{styles.toString()}</style>
-    <div className="rla-comet" style={{ width, height }}>
-      <div />
-      <div />
-      <div />
-    </div>
-  </>
-)
+const Comet = ({ animating = true, width, height }) => {
+  if (!animating) return <></>
+  return (
+    <>
+      <style>{styles.toString()}</style>
+      <div className="rla-comet" style={{ width, height }}>
+        <div />
+        <div />
+        <div />
+      </div>
+    </>
+  )
+}
 
 Comet.propTypes = {
+  animating: Boolean,
   width: Number,
   height: Number
 }

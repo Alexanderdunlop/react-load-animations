@@ -38,10 +38,14 @@ class App extends Component {
       // Default size is 64px by 64px
       <Comet />
 
-      // With props
+      // With size props
       <Ellipsis width={100} />
       <Ring height={100} />
       <Ripple width={100} height={100} />
+
+      // With animating props
+      <Comet animating={true} /> // Visible
+      <Comet animating={false} /> // Hidden
     )
   }
 }
@@ -49,6 +53,7 @@ class App extends Component {
 
 ## Props
 All components come with the following props
+- Animating(Bool): Set the load animation to hide and show (Default true)
 - Width(Int): Set load animation width (Default 64)
 - Height(Int): Sets load animation height (Default 64)
 

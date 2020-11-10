@@ -9,7 +9,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start"
+    "start": "react-scripts start"
   },
   "browserslist": [
     ">0.2%",
